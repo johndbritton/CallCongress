@@ -4,10 +4,7 @@ require 'builder'
 require 'yaml'
 require 'sunlight'
 
-config = YAML::load(File.read('config.yml'))
-config.each_pair do |name, value|
-  set name.to_sym, value
-end
+set :sunlight_key, ENV['sunlight_key']
 
 post '/' do
   builder :welcome
