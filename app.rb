@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'builder'
-require 'yaml'
 require 'sunlight'
 
 set :sunlight_key, ENV['sunlight_key']
